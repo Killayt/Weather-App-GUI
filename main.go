@@ -1,9 +1,58 @@
 package main
 
 import (
-	"github.com/Killayt/Weather-App-GUI/gui"
+	"log"
+	"strconv"
+
+	"fyne.io/fyne/v2"
+	"fyne.io/fyne/v2/app"
+	"fyne.io/fyne/v2/container"
+	"fyne.io/fyne/v2/widget"
+
+	"github.com/Killayt/Weather-App-GUI/config"
 )
 
 func main() {
-	gui.MakeGui()
+	// making window
+	a := app.New()
+	w := a.NewWindow("Weather K")
+	w.Resize(fyne.Size{Width: 500, Height: 700})
+
+	// Создание поля ввода
+	entryToFind := widget.NewEntry()   // Создание поля ввода
+	entryToFind.SetPlaceHolder("City") // placeholder "City"
+
+	// Получение значения data из кнопки btn
+	answare := widget.NewLabel("")
+
+	// Кнопка Find и обработчик
+	btn := widget.NewButton("Find", func() { //функция обработчик
+
+		city := entryToFind.Text //достаем введенный текст
+
+		// обрабатываем city
+		data, err := config.Target(city)
+		if err != nil {
+			log.Println(err)
+			return
+		}
+
+		log.Println(data)
+
+		// Парсим данные и выводим в окно
+
+		formatToString := strconv.FormatFloat(data.Main.Celsius, 'g', 4, 64)
+		result := "Today in " + data.Name + "\n" + formatToString + " celsius."
+		answare.SetText(result)
+
+	})
+
+	w.SetContent(
+		container.NewVBox(
+			entryToFind,
+			btn,
+			answare,
+		))
+
+	w.ShowAndRun()
 }
