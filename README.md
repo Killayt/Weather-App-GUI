@@ -7,12 +7,21 @@
 
 ## How to setup
 <p>
-  <h5>Run in the terminal:</h5>
-  <b>For unix</b>
-    <code>make build</code>
-    <code>Run Weather-K.exe</code>
-  <b>For windows</b>
-    <code>make build_windows</code>
-    <code>make run<>
+  <h4>Run in the terminal:</h4>
+  <b>For Unix:</b>
+    <br>
+    <code>  make build  </code>
+    <br>
+    <code>  make run    </code>
+    <br>
+
+  <b>For Windows:</b>
+    <br>
+    <code>  make build_windows  </code>
+    <br>
+    <code>  make run    </code>
+    <br>
+
+
 </p>
 
