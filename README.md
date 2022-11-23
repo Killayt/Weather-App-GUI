@@ -5,7 +5,7 @@
   <b>Weather-K</b> is an application for tracking the weather in any country/city  in the world with a graphical interface, written by Go.
 </p>
 
-## Lounch
+## ⚡️ Lounch
 <p>
   <h4>Run in the terminal:</h4>
   <b>For Unix:</b>
