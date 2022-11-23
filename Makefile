@@ -10,3 +10,8 @@ build:
 	go mod vendor
 	go build -o Weather-K
 
+run: build
+	./Weather-K
+
+run_windows: build_windows
+	.\Weather-K.exe

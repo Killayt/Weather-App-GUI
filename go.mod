@@ -1,4 +1,4 @@
-module github.com/Killayt/Weather-App-GUI
+module github.com/Killayt/Weather-K-GUI
 
 go 1.18
 

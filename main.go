@@ -9,7 +9,7 @@ import (
 	"fyne.io/fyne/v2/container"
 	"fyne.io/fyne/v2/widget"
 
-	"github.com/Killayt/Weather-App-GUI/iternal"
+	"github.com/Killayt/Weather-K-GUI/iternal"
 )
 
 func main() {
