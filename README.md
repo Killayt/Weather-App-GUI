@@ -5,23 +5,10 @@
   <b>Weather-K</b> is an application for tracking the weather in any country/city  in the world with a graphical interface, written by Go.
 </p>
 
-## ⚡️ Lounch
-<p>
-  <h4>Run in the terminal:</h4>
-  <b>For Unix:</b>
-    <br>
-    <code>  make build  </code>
-    <br>
-    <code>  make run    </code>
-    <br><br><br>
-
-  <b>For Windows:</b>
-    <br>
-    <code>  make build_windows  </code>
-    <br>
-    <code>  make run    </code>
-    <br>
-
-
-</p>
-
+## ⚡️ How to run
+<h4>How to run</h4>
+    <ol>
+        <li>Open file .apiConfig and paste your api token from openweathermap.org</li>
+        <li>Terminate <code>make build</code></li>
+        <li>Then terminate <code>make run</code></li>
+    </ol>
