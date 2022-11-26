@@ -6,7 +6,7 @@
 </p>
 
 ## ⚡️ How to run
-<h4>How to run</h4>
+<h4>That`s simple</h4>
     <ol>
         <li>Open file <code>.apiConfig</code> and paste your api token from openweathermap.org</li>
         <li>Terminate <code>make build</code></li>
