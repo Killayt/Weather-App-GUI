@@ -2,7 +2,7 @@ module github.com/Killayt/Weather-K-GUI
 
 go 1.18
 
-require fyne.io/fyne/v2 v2.2.3
+require fyne.io/fyne/v2 v2.2.4
 
 require (
 	fyne.io/systray v1.10.1-0.20220621085403-9a2652634e93 // indirect

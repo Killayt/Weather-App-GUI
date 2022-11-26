@@ -1,17 +1,10 @@
-.SILENT:
+SILENT: 
 
-build_windows: 
+build: 
+	go get fyne.io/fyne/v2
 	go mod tidy
 	go mod vendor
-	go build -o Weather-K.exe
-
-build:
-	go mod tidy
-	go mod vendor
-	go build -o Weather-K
+	go build
 
 run: build
-	./Weather-K
-
-run_windows: build_windows
-	.\Weather-K.exe
+	./Weather-K-GUI

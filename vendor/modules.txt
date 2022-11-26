@@ -1,4 +1,4 @@
-# fyne.io/fyne/v2 v2.2.3
+# fyne.io/fyne/v2 v2.2.4
 ## explicit; go 1.14
 fyne.io/fyne/v2
 fyne.io/fyne/v2/app
